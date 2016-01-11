@@ -1,5 +1,7 @@
 # Snowy
 
+![Snowy Owl](https://raw.githubusercontent.com/caolan/snowy/master/doc/snowy.png)
+
 A more [node][nodejs]-like alternative to [spiffy][spiffy].
 
 Implements a HTTP server for [CHICKEN Scheme][chicken] based on Joyent's http-parser C library (used in Node.js). Borrows some ideas and code from the fantastic [intarweb][intarweb] and [spiffy][spiffy] too. The API is fairly basic, the idea being that nicer response authoring and query string parsing etc. can be layered on top.
