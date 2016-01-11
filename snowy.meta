@@ -1,0 +1,6 @@
+((synopsis "HTTP server using Joyent's C http-parser")
+ (author "Caolan McMahon")
+ (category web)
+ (depends miscmacros foreigners defstruct)
+ (test-depends test)
+ (license "BSD"))

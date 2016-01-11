@@ -1,0 +1,7 @@
+(compile -O3 -d2 -s snowy.scm parser.c http-parser/http_parser.c -j "snowy")
+(compile -O3 -d0 -s "snowy.import.scm")
+
+(install-extension
+  'snowy
+  '("snowy.so" "snowy.import.so")
+  '((version "0.1.0")))
