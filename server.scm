@@ -85,4 +85,6 @@
     (parameterize ((server-port port)
                    (server-bind-address bind-address)
                    (tcp-buffer-size (snowy-buffer-size)))
-      (accept-loop listener f))))
+      (handle-exceptions _ 
+        (tcp-close listener)
+        (accept-loop listener f)))))
